@@ -35,7 +35,11 @@
   }
 
   &__item {
-    padding: 0 30px;
+    margin-right: 60px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &__item-image {
