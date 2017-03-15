@@ -1,0 +1,80 @@
+.promo-slider {
+  position: relative;
+
+  font-family: 'Ubuntu', sans-serif;
+
+  &__slide {
+    min-height: 490px;
+
+    padding: 100px 250px 10px 250px;
+
+    background: #303840 url("../img/decor/promo-slider_bg.png") no-repeat;
+    background-size: cover;
+
+    text-align: center;
+  }
+
+  &__header {
+    margin: 0;
+    margin-bottom: 25px;
+
+    font-size: 60px;
+    line-height: 1;
+    color: #cccece;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-size: 14px;
+    line-height: 16px;
+    color: #cccece;
+  }
+
+  &__controls {
+    position: absolute;
+    bottom: 30px;
+    right: 180px;
+  }
+
+  &__toggle {
+    display: none;
+  }
+
+  &__label {
+    display: inline-block;
+
+    width: 15px;
+    height: 15px;
+
+    border: 3px solid #adadad;
+    border-radius: 50%;
+
+    background-color: #adadad;
+
+    cursor: pointer;
+  }
+
+  #promo-slider-toggle-1:checked ~ &__controls label[for="promo-slider-toggle-1"],
+  #promo-slider-toggle-2:checked ~ &__controls label[for="promo-slider-toggle-2"],
+  #promo-slider-toggle-3:checked ~ &__controls label[for="promo-slider-toggle-3"],
+  #promo-slider-toggle-4:checked ~ &__controls label[for="promo-slider-toggle-4"],
+  #promo-slider-toggle-5:checked ~ &__controls label[for="promo-slider-toggle-5"] {
+    background-color: #2190c1;
+
+    border-color: #f98561;
+  }
+
+  &__slide {
+    display: none;
+  }
+
+  #promo-slider-toggle-1:checked ~ &__slides &__slide:nth-child(1),
+  #promo-slider-toggle-2:checked ~ &__slides &__slide:nth-child(2),
+  #promo-slider-toggle-3:checked ~ &__slides &__slide:nth-child(3),
+  #promo-slider-toggle-4:checked ~ &__slides &__slide:nth-child(4),
+  #promo-slider-toggle-5:checked ~ &__slides &__slide:nth-child(5) {
+    display: block;
+  }
+}
