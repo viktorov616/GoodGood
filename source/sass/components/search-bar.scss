@@ -1,0 +1,37 @@
+.search-bar {
+  padding: 34px 0;
+  
+  &__text {
+    position: relative;
+
+    display: block;
+
+    margin: 0;
+    padding-right: 45px;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    color: #515862;
+
+    cursor: pointer;
+
+    &:after {
+      content: "";
+
+      position: absolute;
+      left: 45px;
+      top: 50%;
+
+      width: 36px;
+      height: 36px;
+
+      margin-top: -18px;
+
+      background: #f98561 url("../img/decor/search-bar_loupe.png") no-repeat;
+      background-position: 7px;
+
+      border-radius: 50%;
+    }
+  }
+}
