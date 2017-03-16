@@ -33,9 +33,9 @@
   }
 
   &--orange {
-    background-color: #f98561;
+    background-color: $secondary-color;
 
-    border-color: #f75e2f;
+    border-color: $secondary-color;
 
     &:hover {
       box-shadow: 0 3px 3px rgba(249, 133, 97, .7);

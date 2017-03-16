@@ -1,0 +1,20 @@
+.newsletter {
+  &__header {
+    margin-bottom: 20px;
+
+    font-family: 'Bree Serif', serif;
+    font-size: 30px;
+    line-height: 1;
+    color: $secondary-color;
+  }
+
+  &__text {
+    border-bottom: 1px solid #556270;
+
+    padding-bottom: 8px;
+
+    font-size: 12px;
+    line-height: 20px;
+    color: #a3afb2;
+  }
+}

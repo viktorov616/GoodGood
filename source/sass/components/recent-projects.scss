@@ -1,0 +1,48 @@
+.recent-projects {
+  &__header {
+    margin-bottom: 20px;
+
+    font-family: 'Bree Serif', serif;
+    font-size: 30px;
+    line-height: 1;
+    color: $secondary-color;
+  }
+
+  &__item {
+    display: flex;
+
+    margin-bottom: 10px;
+
+    border-bottom: 1px solid #556270;
+
+    &:last-child {
+      margin-bottom: 0;
+
+      border-bottom: none;
+    }
+  }
+
+  &__item-image {
+    width: 56px;
+    height: 56px;
+
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__item-header {
+    margin: 0;
+
+    font-size: 12px;
+    line-height: 20px;
+    color: #a3afb2;
+  }
+
+  &__item-date {
+    margin: 0;
+
+    font-size: 12px;
+    line-height: 20px;
+    color: #a3afb2;
+  }
+}

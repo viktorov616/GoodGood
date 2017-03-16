@@ -1,0 +1,19 @@
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 45px 180px 30px 180px;
+
+  background-color: #2e3e4f;
+
+  &__item {
+    flex-basis: 0;
+    flex-grow: 1;
+
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

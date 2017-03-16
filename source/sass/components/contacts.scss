@@ -1,0 +1,66 @@
+.contacts {
+  &__header {
+    margin-bottom: 20px;
+
+    font-family: 'Bree Serif', serif;
+    font-size: 30px;
+    line-height: 1;
+    color: $secondary-color;
+  }
+
+  &__item {
+    position: relative;
+
+    padding-left: 45px;
+    margin-bottom: 20px;
+
+    &--phone:after {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      width: 29px;
+      height: 35px;
+
+      background: url("../img/decor/contacts_phone.png") no-repeat;
+    }
+
+    &--mobile:after {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      width: 34px;
+      height: 39px;
+
+      background: url("../img/decor/contacts_mobile.png") no-repeat;
+    }
+
+    &--email:after {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      top: 7px;
+
+      width: 33px;
+      height: 24px;
+
+      background: url("../img/decor/contacts_email.png") no-repeat;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+
+    width: 100%;
+
+    font-size: 13px;
+    line-height: 15px;
+    color: #a3afb2;
+  }
+}
