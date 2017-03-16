@@ -30,7 +30,6 @@
 
   &__items {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
   }
 
@@ -60,5 +59,9 @@
     font-size: 11px;
     line-height: 15px;
     color: #515862;
+  }
+
+  &__item-link {
+    font-weight: 700;
   }
 }
