@@ -1,0 +1,114 @@
+.testimonials {
+  padding: 0 180px;
+  padding-top: 30px;
+
+  text-align: center;
+
+  &__header {
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-family: 'Bree Serif', serif;
+    font-size: 27px;
+    line-height: 40px;
+    color: $primary-color;
+  }
+
+  &__slide-text {
+    margin-bottom: 50px;
+
+    font-family: 'Bree Serif', serif;
+    font-size: 25px;
+    color: #515862;
+  }
+
+  &__slide-author-info {
+    font-size: 14px;
+    line-height: 15px;
+    color: #f98561;
+  }
+
+  &__slide-author {
+    font-weight: 700;
+  }
+
+  &__controls {
+    font-size: 0;
+  }
+
+  &__toggle {
+    display: none;
+  }
+
+  &__label {
+    position: relative;
+
+    display: inline-block;
+
+    width: 67px;
+    height: 88px;
+
+    margin-right: 4px;
+
+    border-bottom: 6px solid #c1c1c1;
+
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    &:active {
+      opacity: .4;
+    }
+
+    &--man {
+      background-image: url("../img/decor/testimonials_man.png");
+    }
+
+    &--woman {
+      background-image: url("../img/decor/testimonials_woman.png");
+    }
+  }
+
+    #testimonials-slider-toggle-1:checked ~ &__controls label[for="testimonials-slider-toggle-1"],
+    #testimonials-slider-toggle-2:checked ~ &__controls label[for="testimonials-slider-toggle-2"],
+    #testimonials-slider-toggle-3:checked ~ &__controls label[for="testimonials-slider-toggle-3"] {
+      border-bottom-color: #f98561;
+
+      &:after {
+        content: "";
+
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+
+        margin-left: -5px;
+
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid #f98561;
+      }
+    }
+
+  #testimonials-slider-toggle-1:checked ~ &__controls label[for="testimonials-slider-toggle-1"],
+  #testimonials-slider-toggle-3:checked ~ &__controls label[for="testimonials-slider-toggle-3"] {
+    background-image: url("../img/decor/testimonials_woman--active.png");
+  }
+
+  #testimonials-slider-toggle-2:checked ~ &__controls label[for="testimonials-slider-toggle-2"] {
+    background-image: url("../img/decor/testimonials_man--active.png");
+  }
+
+  &__slide {
+    display: none;
+  }
+
+  #testimonials-slider-toggle-1:checked ~ &__slides &__slide:nth-child(1),
+  #testimonials-slider-toggle-2:checked ~ &__slides &__slide:nth-child(2),
+  #testimonials-slider-toggle-3:checked ~ &__slides &__slide:nth-child(3) {
+    display: block;
+  }
+}
