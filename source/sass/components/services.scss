@@ -65,3 +65,10 @@
     font-weight: 700;
   }
 }
+
+@media #{$tablet-width} {
+  .services {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

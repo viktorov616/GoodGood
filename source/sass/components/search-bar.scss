@@ -32,5 +32,21 @@
 
       border-radius: 50%;
     }
+
+    &:hover {
+      color: $primary-color;
+
+      &:after {
+        background-color: $primary-color;
+      }
+    }
+
+    &:active {
+      color: #0f7ca3;
+
+      &:after {
+        background-color: #0f7ca3;;
+      }
+    }
   }
 }

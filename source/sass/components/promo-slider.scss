@@ -76,3 +76,16 @@
     display: block;
   }
 }
+
+@media #{$tablet-width} {
+  .promo-slider {
+    &__slide {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    &__controls {
+      right: 50px;
+    }
+  }
+}

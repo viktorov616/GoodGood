@@ -36,7 +36,6 @@
 
   &__items {
     display: flex;
-    justify-content: space-between;
 
     padding-bottom: 30px;
 
@@ -44,6 +43,9 @@
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
+
     margin-right: 60px;
 
     &:last-child {
@@ -58,7 +60,28 @@
     color: $primary-color;
   }
 
+  &__item-text {
+    flex-grow: 1;
+  }
+
   &__btn {
-    float: right;
+    margin-left: auto;
+  }
+}
+
+@media #{$tablet-width} {
+  .features {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    &:after {
+      left: 50px;
+
+      width: calc(100% - 100px);
+    }
+
+    &__item {
+      margin-right: 25px;
+    }
   }
 }

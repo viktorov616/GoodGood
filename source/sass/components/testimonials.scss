@@ -112,3 +112,10 @@
     display: block;
   }
 }
+
+@media #{$tablet-width} {
+  .testimonials {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

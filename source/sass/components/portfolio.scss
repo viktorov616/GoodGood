@@ -107,3 +107,19 @@
     color: #bcbcbc;
   }
 }
+
+@media #{$tablet-width} {
+  .portfolio {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    &__items {
+      justify-content: space-around;
+    }
+
+    &__item-image {
+      width: 210px;
+      height: 155px;
+    }
+  }
+}

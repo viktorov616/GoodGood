@@ -7,3 +7,9 @@
 
   border-bottom: 1px solid #d7d9da;
 }
+
+@media #{$tablet-width} {
+  .main-header {
+    padding: 0 50px;
+  }
+}
