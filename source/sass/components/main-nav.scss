@@ -96,3 +96,9 @@
     }
   }
 }
+
+@media #{$mobile-width} {
+  .main-nav {
+    display: none;
+  }
+}

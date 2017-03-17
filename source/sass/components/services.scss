@@ -72,3 +72,39 @@
     padding-right: 50px;
   }
 }
+
+@media #{$mobile-width} {
+  .services {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    &__items {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      flex-basis: 100%;
+
+      margin-right: 0;
+      margin-bottom: 30px;
+
+      border-bottom: 1px solid #d7d9da;
+
+      &:last-child {
+        margin-bottom: 0;
+
+        border-bottom: none;
+      }
+    }
+
+    &__item-header {
+      font-size: 21px;
+      line-height: 1;
+    }
+
+    &__item-text {
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+}

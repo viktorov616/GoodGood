@@ -4,7 +4,7 @@
   &__slide {
     min-height: 490px;
 
-    padding: 100px 250px 10px 250px;
+    padding: 100px 250px 75px 250px;
 
     background: #303840 url("../img/decor/promo-slider_bg.png") no-repeat;
     background-size: cover;
@@ -86,6 +86,33 @@
 
     &__controls {
       right: 50px;
+    }
+  }
+}
+
+@media #{$mobile-width} {
+  .promo-slider {
+    &__header {
+      font-size: 45px;
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    &__slide {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    &__controls {
+      right: 0;
+      bottom: 40px;
+
+      width: 100%;
+
+      text-align: center;
     }
   }
 }

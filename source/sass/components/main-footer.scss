@@ -29,3 +29,17 @@
     }
   }
 }
+
+@media #{$mobile-width} {
+  .main-footer {
+    flex-direction: column;
+
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    &__item {
+      margin-right: 0;
+    }
+  }
+}

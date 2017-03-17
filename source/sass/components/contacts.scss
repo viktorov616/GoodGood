@@ -64,3 +64,26 @@
     color: #a3afb2;
   }
 }
+
+@media #{$mobile-width} {
+  .contacts {
+    text-align: center;
+
+    &__items {
+      display: flex;
+      flex-direction: column;
+      align-content: flex-start;
+    }
+
+    &__header {
+      margin-bottom: 50px;
+    }
+
+    &__link {
+      font-size: 18px;
+      line-height: 20px;
+
+      margin-left: -50px;
+    }
+  }
+}

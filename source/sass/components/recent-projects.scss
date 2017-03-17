@@ -46,3 +46,46 @@
     color: #a3afb2;
   }
 }
+
+@media #{$mobile-width} {
+  .recent-projects {
+    margin-bottom: 50px;
+    
+    text-align: center;
+
+    &__header {
+      margin-bottom: 50px;
+    }
+
+    &__items {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__item-info {
+      text-align: left;
+    }
+
+    &__item-header {
+      margin-bottom: 10px;
+
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &__item-link {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &__item-date {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    &__item-image {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}

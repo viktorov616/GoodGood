@@ -1,4 +1,5 @@
-$tablet-width: "(max-width: 1200px)";
+$tablet-width: "(min-width: 810px) and (max-width: 1200px)";
+$mobile-width: "(max-width: 810px)";
 
 $primary-color: #12a3d6;
 $secondary-color: #f98561;
