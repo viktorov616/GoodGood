@@ -9,9 +9,17 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+  <svg style="display:none">
+    <symbol id="icon-menu" viewBox="0 0 19.96 14">
+      <rect class="cls-1" width="19.96" height="2"/><rect class="cls-1" y="6" width="19.96" height="2"/><rect class="cls-1" y="12" width="19.96" height="2"/>
+    </symbol>
+    <symbol id="icon-menu-close" viewBox="0 0 20.51 20.51">
+      <polygon class="cls-1" points="20.51 1.41 19.1 0 10.26 8.84 1.41 0 0 1.41 8.84 10.26 0 19.1 1.41 20.51 10.26 11.67 19.1 20.51 20.51 19.1 11.67 10.26 20.51 1.41" />
+    </symbol>
+  </svg>
   <header class="main-header">
     <div class="logo"><a href="/" class="logo__link">Your Logo</a></div>
-    <nav class="main-nav">
+    <nav id="main-nav" class="main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__list-item"><p href="/" class="main-nav__link  main-nav__link--active">Home</p></li>
         <li class="main-nav__list-item"><a href="#" class="main-nav__link">Portfolio</a></li>
@@ -22,6 +30,10 @@
     </nav>
     <div class="search-bar">
       <p class="search-bar__text">Search</p>
+    </div>
+    <div class="main-header__nav-controls">
+      <svg id="nav-toggle-open" class="main-header__nav-controls-btn" width="20" height="15"><use xlink:href="#icon-menu"/></svg>
+      <svg id="nav-toggle-close" class="main-header__nav-controls-btn  main-header__nav-controls-btn--cross  main-header__nav-controls-btn--hide" width="20" height="15"><use xlink:href="#icon-menu-close"/></svg>
     </div>
   </header>
   <main class="index-main">
@@ -254,5 +266,6 @@
       </div>
     </section>
   </footer>
+  <script src="js/main.min.js"></script>
 </body>
 </html>

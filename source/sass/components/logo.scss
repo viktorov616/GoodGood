@@ -1,8 +1,4 @@
 .logo {
-  &:hover {
-    opacity: .9;
-  }
-
   &__link {
     position: relative;
 
@@ -43,6 +39,12 @@
         background-color: #f98561;
 
         border-radius: 50%;
+      }
+
+      &:hover {
+        opacity: .9;
+
+        color: #2bb9ed;
       }
 
       &:active {

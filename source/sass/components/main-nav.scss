@@ -97,8 +97,48 @@
   }
 }
 
+@keyframes main-nav-show {
+  from { transform: translateY(-400px); }
+  to { transform: translateY(0px); }
+}
+
+@keyframes main-nav-hide {
+  from { transform: translateY(0px); }
+  to { transform: translateY(-500px); }
+}
+
 @media #{$mobile-width} {
   .main-nav {
     display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+
+    background-color: #fff;
+
+    z-index: 3;
+
+    &--show {
+      display: block;
+
+      animation: main-nav-show .7s;
+    }
+
+    &--hide {
+      animation: main-nav-hide .9s;
+    }
+
+    &__list-item {
+      width: 100%;
+
+      text-align: center;
+    }
+
+    &__link {
+      font-size: 18px;
+    }
   }
 }
