@@ -24,7 +24,7 @@
       width: 29px;
       height: 35px;
 
-      background: url("../img/decor/contacts_phone.png") no-repeat;
+      background: url("../img/decor/sprite.png") -167px -20px no-repeat;
     }
 
     &--mobile:after {
@@ -37,7 +37,7 @@
       width: 34px;
       height: 39px;
 
-      background: url("../img/decor/contacts_mobile.png") no-repeat;
+      background: url("../img/decor/sprite.png") -94px -20px no-repeat;
     }
 
     &--email:after {
@@ -50,7 +50,7 @@
       width: 33px;
       height: 24px;
 
-      background: url("../img/decor/contacts_email.png") no-repeat;
+      background: url("../img/decor/sprite.png") -20px -20px no-repeat;
     }
   }
 
@@ -76,7 +76,7 @@
     }
 
     &__header {
-      margin-bottom: 50px;
+      margin-bottom: 25px;
     }
 
     &__link {
