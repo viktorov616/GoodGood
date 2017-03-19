@@ -16,6 +16,9 @@
     <symbol id="icon-menu-close" viewBox="0 0 20.51 20.51">
       <polygon class="cls-1" points="20.51 1.41 19.1 0 10.26 8.84 1.41 0 0 1.41 8.84 10.26 0 19.1 1.41 20.51 10.26 11.67 19.1 20.51 20.51 19.1 11.67 10.26 20.51 1.41" />
     </symbol>
+    <symbol id="icon-arrow" viewBox="0 0 240.823 240.823">
+      <path d="M183.189,111.816L74.892,3.555c-4.752-4.74-12.451-4.74-17.215,0c-4.752,4.74-4.752,12.439,0,17.179l99.707,99.671l-99.695,99.671c-4.752,4.74-4.752,12.439,0,17.191c4.752,4.74,12.463,4.74,17.215,0l108.297-108.261 C187.881,124.315,187.881,116.495,183.189,111.816z"/>
+    </symbol>
   </svg>
   <header class="main-header">
     <div class="logo"><a href="/" class="logo__link">Your Logo</a></div>
@@ -38,44 +41,43 @@
   </header>
   <main class="index-main">
     <section class="promo-slider">
-      <input type="radio" id="promo-slider-toggle-1" name="promo-slider-toggle" class="promo-slider__toggle" checked="checked">
-      <input type="radio" id="promo-slider-toggle-2" name="promo-slider-toggle" class="promo-slider__toggle">
-      <input type="radio" id="promo-slider-toggle-3" name="promo-slider-toggle" class="promo-slider__toggle">
-      <input type="radio" id="promo-slider-toggle-4" name="promo-slider-toggle" class="promo-slider__toggle">
-      <input type="radio" id="promo-slider-toggle-5" name="promo-slider-toggle" class="promo-slider__toggle">
-      <div class="promo-slider__slides">
-        <div class="promo-slider__slide">
+      <div class="promo-slider__items">
+        <div class="promo-slider__item">
           <h1 class="promo-slider__header">Good Design Is Good Business</h1>
           <p class="promo-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies sagittis magnaa commodo. Ut eget eros mauris, ut cursus urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
           <a href="#" class="btn  btn--big  btn--orange">Learn more</a>
         </div>
-        <div class="promo-slider__slide">
+        <div class="promo-slider__item  promo-slider__item--hide">
           <h1 class="promo-slider__header">Good Design Is Good Business 2</h1>
           <p class="promo-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies sagittis magnaa commodo. Ut eget eros mauris, ut cursus urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
           <a href="#" class="btn  btn--big  btn--orange">Learn more</a>
         </div>
-        <div class="promo-slider__slide">
+        <div class="promo-slider__item  promo-slider__item--hide">
           <h1 class="promo-slider__header">Good Design Is Good Business 3</h1>
           <p class="promo-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies sagittis magnaa commodo. Ut eget eros mauris, ut cursus urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
           <a href="#" class="btn  btn--big  btn--orange">Learn more</a>
         </div>
-        <div class="promo-slider__slide">
+        <div class="promo-slider__item  promo-slider__item--hide">
           <h1 class="promo-slider__header">Good Design Is Good Business 4</h1>
           <p class="promo-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies sagittis magnaa commodo. Ut eget eros mauris, ut cursus urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
           <a href="#" class="btn  btn--big  btn--orange">Learn more</a>
         </div>
-        <div class="promo-slider__slide">
+        <div class="promo-slider__item  promo-slider__item--hide">
           <h1 class="promo-slider__header">Good Design Is Good Business 5</h1>
           <p class="promo-slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies sagittis magnaa commodo. Ut eget eros mauris, ut cursus urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
           <a href="#" class="btn  btn--big  btn--orange">Learn more</a>
         </div>
       </div>
-      <div class="promo-slider__controls">
-        <label for="promo-slider-toggle-1" class="promo-slider__label"></label>
-        <label for="promo-slider-toggle-2" class="promo-slider__label"></label>
-        <label for="promo-slider-toggle-3" class="promo-slider__label"></label>
-        <label for="promo-slider-toggle-4" class="promo-slider__label"></label>
-        <label for="promo-slider-toggle-5" class="promo-slider__label"></label>
+      <div id="promo-slider-controls" class="promo-slider__controls">
+        <span data-number="0" class="promo-slider__control-btn  promo-slider__control-btn--active"></span>
+        <span data-number="1" class="promo-slider__control-btn"></span>
+        <span data-number="2" class="promo-slider__control-btn"></span>
+        <span data-number="3" class="promo-slider__control-btn"></span>
+        <span data-number="4" class="promo-slider__control-btn"></span>
+      </div>
+      <div class="promo-slider__arrow-controls">
+        <svg id="promo-slider-btn-left" class="promo-slider__btn-arrow  promo-slider__btn-arrow--left" width="50" height="25"><use xlink:href="#icon-arrow"/></svg>
+        <svg id="promo-slider-btn-right" class="promo-slider__btn-arrow  promo-slider__btn-arrow--right" width="50" height="25"><use xlink:href="#icon-arrow"/></svg>
       </div>
     </section>
     <section class="services">
