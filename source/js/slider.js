@@ -94,7 +94,9 @@ Slider.prototype.manageSlideChange = function(e) {
 
   while (target !== this.controls) {
     if (target.dataset.number) {
-      this._changeSlide(target.dataset.number)
+      this._changeSlide(target.dataset.number);
+
+      return;
     }
 
     target = target.parentElement;
