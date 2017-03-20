@@ -119,7 +119,7 @@ Slider.prototype.changeSlide = function(e) {
 
     var currentBtn = self.controls.querySelector('span[data-number="' + currentSlide + '"]');
     var nextBtn = self.controls.querySelector('span[data-number="' + number + '"]');
-    var side = (currentSlide > number) ? 'left' : 'right'
+    var side = (currentSlide < number) ? 'left' : 'right'
 
     self.slides[currentSlide].classList.add(self.name + '__item--slide-' + side);
 
@@ -137,8 +137,14 @@ Slider.prototype.changeSlide = function(e) {
   }
 }
 
-var slider = new Slider('promo-slider');
+var promoSlider = new Slider('promo-slider');
 
-slider.btnLeft.addEventListener('click', slider.slideLeft);
-slider.btnRight.addEventListener('click', slider.slideRight);
-slider.controls.addEventListener('click', slider.changeSlide);
+promoSlider.btnLeft.addEventListener('click', promoSlider.slideLeft);
+promoSlider.btnRight.addEventListener('click', promoSlider.slideRight);
+promoSlider.controls.addEventListener('click', promoSlider.changeSlide);
+
+var testimonialsSlider = new Slider('testimonials');
+
+testimonialsSlider.btnLeft.addEventListener('click', testimonialsSlider.slideLeft);
+testimonialsSlider.btnRight.addEventListener('click', testimonialsSlider.slideRight);
+testimonialsSlider.controls.addEventListener('click', testimonialsSlider.changeSlide);

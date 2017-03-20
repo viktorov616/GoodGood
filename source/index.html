@@ -162,27 +162,28 @@
     <section class="testimonials">
       <h1 class="testimonials__header">Testimonials</h1>
       <div class="testimonials__slider">
-        <input type="radio" id="testimonials-slider-toggle-1" name="testimonials-slider-toggle" class="testimonials__toggle" checked="checked">
-        <input type="radio" id="testimonials-slider-toggle-2" name="testimonials-slider-toggle" class="testimonials__toggle">
-        <input type="radio" id="testimonials-slider-toggle-3" name="testimonials-slider-toggle" class="testimonials__toggle">
-        <div class="testimonials__slides">
-          <div class="testimonials__slide">
-            <p class="testimonials__slide-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit mauris necip at lacus commodo suscipit praesent sollicitudin enim vel mirhon 1"</p>
-            <p class="testimonials__slide-author-info"><span class="testimonials__slide-author">Jon Doe</span> / CEO of LoremIpsum</p>
+        <div class="testimonials__items">
+          <div class="testimonials__item">
+            <p class="testimonials__item-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit mauris necip at lacus commodo suscipit praesent sollicitudin enim vel mirhon 1"</p>
+            <p class="testimonials__item-author-info"><span class="testimonials__item-author">Jon Doe</span> / CEO of LoremIpsum</p>
           </div>
-          <div class="testimonials__slide">
-            <p class="testimonials__slide-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit mauris necip at lacus commodo suscipit praesent sollicitudin enim vel mirhon 2"</p>
-            <p class="testimonials__slide-author-info"><span class="testimonials__slide-author">Jon Doe</span> / CEO of LoremIpsum</p>
+          <div class="testimonials__item  testimonials__item--hide">
+            <p class="testimonials__item-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit mauris necip at lacus commodo suscipit praesent sollicitudin enim vel mirhon 2"</p>
+            <p class="testimonials__item-author-info"><span class="testimonials__item-author">Jon Doe</span> / CEO of LoremIpsum</p>
           </div>
-          <div class="testimonials__slide">
-            <p class="testimonials__slide-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit mauris necip at lacus commodo suscipit praesent sollicitudin enim vel mirhon 3"</p>
-            <p class="testimonials__slide-author-info"><span class="testimonials__slide-author">Jon Doe</span> / CEO of LoremIpsum</p>
+          <div class="testimonials__item  testimonials__item--hide">
+            <p class="testimonials__item-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit mauris necip at lacus commodo suscipit praesent sollicitudin enim vel mirhon 3"</p>
+            <p class="testimonials__item-author-info"><span class="testimonials__item-author">Jon Doe</span> / CEO of LoremIpsum</p>
           </div>
         </div>
-        <div class="testimonials__controls">
-          <label for="testimonials-slider-toggle-1" class="testimonials__label  testimonials__label--woman"></label>
-          <label for="testimonials-slider-toggle-2" class="testimonials__label  testimonials__label--man"></label>
-          <label for="testimonials-slider-toggle-3" class="testimonials__label  testimonials__label--woman"></label>
+        <div class="testimonials__arrow-controls">
+          <svg id="testimonials-btn-left" class="testimonials__btn-arrow  testimonials__btn-arrow--left" width="50" height="25"><use xlink:href="#icon-arrow"/></svg>
+          <svg id="testimonials-btn-right" class="testimonials__btn-arrow  testimonials__btn-arrow--right" width="50" height="25"><use xlink:href="#icon-arrow"/></svg>
+        </div>
+        <div id="testimonials-controls" class="testimonials__controls">
+          <span data-number="0" class="testimonials__control-btn  testimonials__control-btn--woman  testimonials__control-btn--active"></span>
+          <span data-number="1" class="testimonials__control-btn  testimonials__control-btn--man"></span>
+          <span data-number="2" class="testimonials__control-btn  testimonials__control-btn--woman"></span>
         </div>
       </div>
     </section>

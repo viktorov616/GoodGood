@@ -17,7 +17,7 @@ Menu.prototype.open = function() {
 
   this.btnOpen.classList.add('main-header__nav-controls-btn--hide');
   this.btnClose.classList.remove('main-header__nav-controls-btn--hide');
-  this.mainNav.classList.add('main-nav--show');  
+  this.mainNav.classList.add('main-nav--show');
 }
 
 Menu.prototype.close = function() {

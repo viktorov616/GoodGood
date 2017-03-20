@@ -1,8 +1,32 @@
+@keyframes slide-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+@keyframes slide-right {
+  from { transform: translateX(0); }
+  to { transform: translateX(100%); }
+}
+
+@keyframes slide-left-reverse {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slide-right-reverse {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
 .testimonials {
-  padding: 0 180px;
+  position: relative;
+
+  padding: 0 230px;
   padding-top: 30px;
 
   text-align: center;
+
+  overflow: hidden;
 
   &__header {
     margin: 0;
@@ -14,7 +38,8 @@
     color: $primary-color;
   }
 
-  &__slide-text {
+  &__item-text {
+    margin: 0;
     margin-bottom: 50px;
 
     font-family: 'Bree Serif', serif;
@@ -22,13 +47,15 @@
     color: #515862;
   }
 
-  &__slide-author-info {
+  &__item-author-info {
+    margin-bottom: 0;
+
     font-size: 14px;
     line-height: 15px;
     color: $secondary-color;
   }
 
-  &__slide-author {
+  &__item-author {
     font-weight: 700;
   }
 
@@ -40,7 +67,7 @@
     display: none;
   }
 
-  &__label {
+  &__control-btn {
     position: relative;
 
     display: inline-block;
@@ -71,11 +98,8 @@
     &--woman {
       background: url("../img/decor/sprite.png") -234px -336px no-repeat;
     }
-  }
 
-    #testimonials-slider-toggle-1:checked ~ &__controls label[for="testimonials-slider-toggle-1"],
-    #testimonials-slider-toggle-2:checked ~ &__controls label[for="testimonials-slider-toggle-2"],
-    #testimonials-slider-toggle-3:checked ~ &__controls label[for="testimonials-slider-toggle-3"] {
+    &--active {
       border-bottom-color: #f98561;
 
       &:after {
@@ -93,36 +117,97 @@
       }
     }
 
-  #testimonials-slider-toggle-1:checked ~ &__controls label[for="testimonials-slider-toggle-1"],
-  #testimonials-slider-toggle-3:checked ~ &__controls label[for="testimonials-slider-toggle-3"] {
-    background: url("../img/decor/sprite.png") -341px -336px no-repeat;
+    &--active:nth-child(1),
+    &--active:nth-child(3) {
+      background: url("../img/decor/sprite.png") -341px -336px no-repeat;
+    }
+
+    &--active:nth-child(2) {
+      background: url("../img/decor/sprite.png") -127px -336px no-repeat;
+    }
   }
 
-  #testimonials-slider-toggle-2:checked ~ &__controls label[for="testimonials-slider-toggle-2"] {
-    background: url("../img/decor/sprite.png") -127px -336px no-repeat;
+  &__items {
+    position: relative;
+
+    overflow: hidden;
   }
 
-  &__slide {
-    display: none;
+  &__item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    padding-bottom: 10px;
+
+    &--hide {
+      display: none;
+    }
+
+    &--slide-left {
+      animation: slide-left .9s
+    }
+
+    &--slide-right {
+      animation: slide-right .9s
+    }
+
+    &--slide-left-reverse {
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      animation: slide-left-reverse .9s
+    }
+
+    &--slide-right-reverse {
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      animation: slide-right-reverse .9s
+    }
   }
 
-  #testimonials-slider-toggle-1:checked ~ &__slides &__slide:nth-child(1),
-  #testimonials-slider-toggle-2:checked ~ &__slides &__slide:nth-child(2),
-  #testimonials-slider-toggle-3:checked ~ &__slides &__slide:nth-child(3) {
-    display: block;
+  &__btn-arrow {
+    position: absolute;
+    top: 50%;
+
+    width: 50px;
+    height: 50px;
+
+    margin-top: -25px;
+
+    fill: #cccece;
+
+    cursor: pointer;
+
+    &--left {
+      left: 50px;
+
+      transform: rotate(180deg);
+    }
+
+    &--right {
+      right: 50px;
+    }
+
+    &:hover {
+      fill: #e8e8e8;
+    }
   }
 }
 
 @media #{$tablet-width} {
   .testimonials {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 
 @media #{$mobile-width} {
   .testimonials {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
